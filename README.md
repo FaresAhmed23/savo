@@ -1,180 +1,170 @@
-🍴 Savoria Kitchen - Modern Restaurant Website
+# Savoria - Modern Italian Restaurant Website
 
-A sophisticated, fully responsive restaurant website built with React, TypeScript, and Tailwind CSS. Features smooth animations, modern design, and exceptional user experience.
+A sophisticated and responsive restaurant website built with React, TypeScript, and Vite. Savoria showcases an elegant dining experience with a modern web interface featuring smooth animations, dynamic menu displays, and an intuitive user experience.
 
-Savoria Kitchen Banner
-🌟 Live Demo
+## 🌟 Features
 
-View Live Demo • View Design Process
-✨ Features
+- **Responsive Design**: Fully responsive layout that works seamlessly across all devices
+- **Dynamic Menu**: Interactive menu with categories (appetizers, mains, desserts, beverages) and dietary filters
+- **Smooth Animations**: Framer Motion powered animations for enhanced user experience
+- **Performance Optimized**: Lazy loading, code splitting, and optimized images
+- **SEO Ready**: React Helmet Async for meta tag management
+- **Type Safe**: Full TypeScript support for better developer experience
+- **Modern Styling**: Tailwind CSS with custom theme configuration
 
-    Modern Design: Clean, elegant UI with attention to detail
-    Fully Responsive: Seamless experience across all devices
-    Smooth Animations: Powered by Framer Motion for delightful interactions
-    Type-Safe: Built with TypeScript for robust code
-    Performance Optimized: Lazy loading, code splitting, and optimized images
-    SEO Friendly: Meta tags and structured data for better search visibility
-    Accessibility: WCAG compliant with proper ARIA labels
-    Online Reservations: Integrated booking system with form validation
+## 🛠️ Tech Stack
 
-🛠️ Tech Stack
+- **Frontend Framework**: React 19.1.1
+- **Language**: TypeScript
+- **Build Tool**: Vite 7.1.2
+- **Styling**: Tailwind CSS 3.4.17
+- **Routing**: React Router DOM 7.8.2
+- **Animations**: Framer Motion 12.23.12
+- **Forms**: React Hook Form 7.62.0
+- **Icons**: Heroicons React 2.2.0
+- **HTTP Client**: Axios 1.11.0
+- **SEO**: React Helmet Async 2.0.5
 
-    Frontend Framework: React 18 with TypeScript
-    Build Tool: Vite 5
-    Styling: Tailwind CSS 3
-    Routing: React Router v6
-    Animations: Framer Motion
-    Icons: Heroicons
-    Form Handling: React Hook Form
-    SEO: React Helmet Async
+## 📋 Prerequisites
 
-📋 Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn package manager
 
-Before you begin, ensure you have the following installed:
+## 🚀 Installation
 
-    Node.js (v18.0.0 or higher)
-    npm (v9.0.0 or higher) or yarn
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/savoria.git
+cd savoria
 
-🚀 Getting Started
-Installation
-
-    Clone the repository
-
-    bash
-
-git clone https://github.com/yourusername/savoria-kitchen.git
-cd savoria-kitchen
-
-Install dependencies
+    Install dependencies:
 
 bash
 
 npm install
-# or
-yarn install
 
-Set up environment variables
+    Start the development server:
 
 bash
 
-cp .env.example .env.local
+npm run dev
 
-Update .env.local with your configuration:
-
-env
-
-VITE_API_URL=your_api_url
-VITE_GOOGLE_MAPS_API_KEY=your_google_maps_key
-
-Start the development server
-
-bash
-
-    npm run dev
-    # or
-    yarn dev
-
-    Open your browser
-    Navigate to http://localhost:3000
-
-📦 Building for Production
-
-bash
-
-# Create production build
-npm run build
-
-# Preview production build locally
-npm run preview
-
+The application will open automatically at http://localhost:3000
 📁 Project Structure
 
 text
 
-savoria-kitchen/
-├── public/
-│   └── images/          # Static images
+savoria/
 ├── src/
-│   ├── components/      # Reusable components
-│   │   ├── common/      # Shared components
-│   │   ├── layout/      # Layout components
-│   │   ├── home/        # Home page components
-│   │   ├── menu/        # Menu page components
-│   │   ├── about/       # About page components
-│   │   └── contact/     # Contact page components
-│   ├── data/           # Mock data and constants
-│   ├── hooks/          # Custom React hooks
-│   ├── pages/          # Page components
-│   ├── types/          # TypeScript type definitions
-│   ├── utils/          # Utility functions
-│   ├── App.tsx         # Main App component
-│   ├── main.tsx        # Application entry point
-│   └── index.css       # Global styles
-├── .env.example        # Environment variables example
-├── .gitignore         # Git ignore file
-├── index.html         # HTML template
-├── package.json       # Project dependencies
-├── README.md          # Project documentation
-├── tailwind.config.js # Tailwind configuration
-├── tsconfig.json      # TypeScript configuration
-└── vite.config.ts     # Vite configuration
+│   ├── components/
+│   │   ├── common/         # Reusable components (LoadingSpinner, ScrollToTop)
+│   │   └── layout/         # Layout components
+│   ├── pages/              # Page components (lazy loaded)
+│   │   ├── HomePage.tsx
+│   │   ├── MenuPage.tsx
+│   │   ├── AboutPage.tsx
+│   │   └── ContactPage.tsx
+│   ├── data/               # Static data
+│   │   ├── menuData.ts     # Menu items data
+│   │   └── restaurantData.ts # Restaurant info, hours, testimonials
+│   ├── types/              # TypeScript type definitions
+│   ├── hooks/              # Custom React hooks
+│   ├── utils/              # Utility functions
+│   └── App.tsx             # Main application component
+├── public/                 # Static assets
+├── tailwind.config.js      # Tailwind CSS configuration
+├── vite.config.ts          # Vite configuration
+├── tsconfig.json           # TypeScript configuration
+└── package.json            # Project dependencies and scripts
 
 📜 Available Scripts
 
-bash
+    npm run dev - Start development server
+    npm run build - Build for production
+    npm run preview - Preview production build
+    npm run lint - Run ESLint
+    npm run type-check - Run TypeScript type checking
 
-# Development
-npm run dev             # Start development server
-npm run build          # Build for production
-npm run preview        # Preview production build
-npm run type-check     # Run TypeScript type checking
-npm run lint           # Run ESLint
+🎨 Theme Configuration
 
-# Deployment
-npm run deploy         # Deploy to Vercel/Netlify
+The project uses a custom Tailwind theme with:
+Colors
 
-🎨 Design Decisions
-Color Palette
+    Primary: Orange shades (#F97316)
+    Secondary: Dark grays (#1F2937, #111827)
+    Accent: Green shades (#10B981, #059669)
 
-    Primary: Warm Orange (#D97706) - Appetizing and inviting
-    Secondary: Dark Gray (#1F2937) - Professional and elegant
-    Accent: Fresh Green (#10B981) - Natural and fresh
-    Neutral: Light Gray (#F3F4F6) - Clean backgrounds
+Fonts
 
-Typography
+    Display: Playfair Display (serif)
+    Body: Inter (sans-serif)
 
-    Headings: Playfair Display - Elegant serif for sophistication
-    Body: Inter - Clean, readable sans-serif
+Custom Animations
 
-Component Architecture
+    fade-in: Smooth fade-in effect
+    slide-up: Slide up animation
 
-    Atomic design principles
-    Reusable component library
-    Consistent spacing and sizing system
-    Mobile-first responsive approach
+🔧 Path Aliases
 
-🔧 Configuration
-Tailwind CSS
+The project uses path aliases for cleaner imports:
 
-The project uses a custom Tailwind configuration with:
+    @/ → ./src/
+    @components → ./src/components
+    @pages → ./src/pages
+    @utils → ./src/utils
+    @hooks → ./src/hooks
+    @types → ./src/types
 
-    Custom color palette
-    Extended animations
-    Custom font families
-    Responsive breakpoints
+📱 Pages
+Home Page
 
-Path Aliases
+    Hero section with restaurant introduction
+    Featured menu items
+    Customer testimonials
+    Call-to-action sections
 
-Configured path aliases for cleaner imports:
+Menu Page
 
-typescript
+    Full menu with categories
+    Dietary filters (Vegetarian, Vegan, Gluten-Free, Dairy-Free)
+    Popular items highlighting
+    Beautiful food imagery
 
-import Component from '@/components/Component'
-import { useCustomHook } from '@/hooks/useCustomHook'
+About Page
+
+    Restaurant story and philosophy
+    Chef information
+    Opening hours
+
+Contact Page
+
+    Contact form
+    Location information
+    Reservation details
+
+🍽️ Menu Categories
+
+    Appetizers: 6 items including Truffle Arancini, Burrata Caprese
+    Main Courses: 8 items including Grilled Ribeye, Lobster Ravioli
+    Desserts: 6 items including Tiramisu, Chocolate Lava Cake
+    Beverages: 6 items including Italian Soda, House Wine
+
+🔄 State Management
+
+The application uses React's built-in state management with:
+
+    useState for local component state
+    useContext for global state (if needed)
+    React Hook Form for form state management
+
+🚦 Performance Optimizations
+
+    Lazy Loading: All pages are lazy loaded for better initial load time
+    Code Splitting: Automatic code splitting via Vite
+    Image Optimization: External CDN images from Unsplash
+    Suspense Boundaries: Loading states for lazy-loaded components
 
 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
 
     Fork the repository
     Create your feature branch (git checkout -b feature/AmazingFeature)
@@ -182,50 +172,14 @@ Contributions are welcome! Please follow these steps:
     Push to the branch (git push origin feature/AmazingFeature)
     Open a Pull Request
 
-Coding Standards
-
-    Follow the existing code style
-    Write meaningful commit messages
-    Add appropriate comments
-    Update documentation as needed
-    Ensure all tests pass
-
-📸 Screenshots
-Desktop View
-
-Desktop Home
-Mobile View
-
-Mobile Menu
-Tablet View
-
-Tablet About
-🚦 Roadmap
-
-Add online ordering system
-Integrate payment gateway
-Add multi-language support
-Implement dark mode
-Add customer loyalty program
-Create admin dashboard
-Add real-time table availability
-
-    Implement push notifications
-
 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License.
 🙏 Acknowledgments
 
-    Design inspiration from modern restaurant websites
     Images from Unsplash
     Icons from Heroicons
-    Fonts from Google Fonts
+    Font families from Google Fonts
 
-📞 Contact
-
-Your Name - @yourtwitter - your.email@example.com
-
-Project Link: https://github.com/yourusername/savoria-kitchen
-
-Made with ❤️ by [Your Name]
+Made with ❤️ for Savoria Restaurant
+```
