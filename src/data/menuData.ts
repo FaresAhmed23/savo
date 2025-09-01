@@ -68,7 +68,8 @@ export const menuItems: MenuItem[] = [
   {
     id: "7",
     name: "Grilled Ribeye",
-    description: "Prime ribeye with roasted vegetables and red wine reduction",
+    description:
+      "Prime ribeye with roasted vegetables and Grape Juice reduction",
     price: 45.99,
     category: "main",
     image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400",
@@ -106,7 +107,8 @@ export const menuItems: MenuItem[] = [
   {
     id: "11",
     name: "Chicken Marsala",
-    description: "Pan-seared chicken breast with mushroom marsala wine sauce",
+    description:
+      "Pan-seared chicken breast with mushroom marsala spiracha sauce",
     price: 28.99,
     category: "main",
     image: "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=400",
@@ -125,8 +127,7 @@ export const menuItems: MenuItem[] = [
   {
     id: "13",
     name: "Seafood Linguine",
-    description:
-      "Fresh pasta with shrimp, scallops, mussels in white wine sauce",
+    description: "Fresh pasta with shrimp, scallops, mussels in spiracha sauce",
     price: 36.99,
     category: "main",
     image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400",
@@ -231,8 +232,8 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: "24",
-    name: "House Wine",
-    description: "Selection of red and white wines by the glass",
+    name: "Grape Juice",
+    description: "Selection of grapefruits by the glass",
     price: 8.99,
     category: "beverage",
     image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400",

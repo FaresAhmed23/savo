@@ -32,7 +32,7 @@ const AboutPage: React.FC = () => {
       name: "David Chen",
       role: "Sommelier",
       image: "https://images.unsplash.com/photo-1559575003-fb4ee38a747d?w=400",
-      bio: "Expert in wine pairing",
+      bio: "Expert in Serving Delicious Beverages",
     },
   ];
 
@@ -178,9 +178,9 @@ const AboutPage: React.FC = () => {
             >
               <div className="text-4xl mb-4">🍷</div>
               <h3 className="text-xl font-semibold mb-2">
-                Best Wine Selection
+                Best Beverages Selection
               </h3>
-              <p className="text-gray-600">Wine Spectator 2023</p>
+              <p className="text-gray-600">Beverages Spectator 2023</p>
             </motion.div>
           </div>
         </div>

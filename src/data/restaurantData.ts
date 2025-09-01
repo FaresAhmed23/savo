@@ -22,10 +22,9 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "2",
-    name: "Gordon Ramsay",
+    name: "Michael Chen",
     rating: 5,
-    comment:
-      "Bloody brilliant! The risotto is cooked to perfection and the service is exceptional. This is how Italian cuisine should be done!",
+    comment: "Impeccable service and stunning presentation. A must-visit!",
     date: "2024-01-20",
   },
   {
